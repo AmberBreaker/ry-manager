@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--360浏览器优先以webkit内核解析-->
+    <title>若依介绍</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link href="../static/css/font-awesome.min.css" th:href="@{/css/font-awesome.min.css}" rel="stylesheet"/>
+    <link href="../static/css/style.min.css" th:href="@{/css/style.min.css}" rel="stylesheet"/>
+</head>
+
+<body class="gray-bg">
+
+<div class="row border-bottom white-bg dashboard-header">
+    <div class="col-sm-12">
+        <blockquote class="text-warning" style="font-size:14px">
+            <br/><a target="_blank" href="https://mp.csdn.net/">CSDN博客首页</a><br>
+            <br/><a target="_blank" href="https://learn.kaikeba.com/home">开课吧学习网站</a><br>
+            <br/><h4 class="text-danger"> ----- </h4>
+        </blockquote>
+        <hr>
+    </div>
+    <div class="col-sm-3">
+        <h2>图片对应模块</h2>
+        <small>存放图片模块，备用</small>
+        <br><br>
+        <img th:src="@{/img/qr_code.png}" width="100%" style="max-width:264px;"><br>
+    </div>
+    <div class="col-sm-5">
+        <h2>文字描述模块</h2>
+        <p>具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述
+            具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述
+            具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述
+            具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述具体文字描述</p>
+
+        <p><b>当前版本：</b><span>v[[${version}]]</span></p>
+        <p><span class="label label-warning">&yen;免费开源</span></p>
+        <br>
+        <p>
+            <a class="btn btn-success btn-outline" href="http://www.baidu.com" target="_blank">
+                <i class="fa fa-cloud"> </i> 访问码云
+            </a>
+            <a class="btn btn-white btn-bitbucket" href="http://www.baidu.com" target="_blank">
+                <i class="fa fa-home"></i> 访问主页
+            </a>
+        </p>
+    </div>
+    <div class="col-sm-4">
+        <h2>枚举类型模块</h2>
+        <ol>
+            <li>枚举类型1: 枚举值1</li>
+            <li>枚举类型2: 枚举值2</li>
+            <li>枚举类型3: 枚举值3</li>
+            <li>枚举类型4: 枚举值4</li>
+            <li>枚举类型5: 枚举值5</li>
+            <li>枚举类型6: 枚举值6</li>
+            <li>枚举类型7: 枚举值7</li>
+            <li>枚举类型8: 枚举值8</li>
+        </ol>
+    </div>
+
+</div>
+<div class="wrapper wrapper-content">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>联系信息模块</h5>
+                </div>
+                <div class="ibox-content">
+                    <p><i class="fa fa-send-o"></i> 官网：<a href="http://www.baidu.com" target="_blank">http://www.baidu.com</a>
+                    </p>
+                    <p>
+                        <i class="fa fa-qq"></i> QQ群：
+                        <s>作废1234567</s><s>作废1234567</s><s>作废1234567</s> <s>作废1234567</s>
+                        <a href="http://www.baidu.com" target="_blank">未作废1234567</a>
+                    </p>
+                    <p>
+                        <i class="fa fa-weixin"></i>微信：
+                        <a href="javascript:;">李某某的微信</a>
+                    </p>
+                    <p>
+                        <i class="fa fa-credit-card"></i>支付宝：
+                        <a href="javascript:;" class="">李某某的支付宝</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>日志流水模块</h5>
+                </div>
+                <div class="ibox-content no-padding">
+                    <div class="panel-body">
+                        <div class="panel-group" id="version">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h5 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#version" href="#v202106">v2021.06</a>
+                                        <code class="pull-right">2021.06.27</code>
+                                    </h5>
+                                </div>
+                                <div id="v202106" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ol>
+                                            <li>新增IE浏览器版本过低提示页面</li>
+                                            <li>新增详细信息tab页签方式</li>
+                                            <li>新增解锁屏幕打开上次页签</li>
+                                            <li>数据监控默认账户密码防止越权访问</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h5 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#version" href="#v202105">v2021.05</a>
+                                        <code class="pull-right">2021.05.31</code>
+                                    </h5>
+                                </div>
+                                <div id="v202105" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ol>
+                                            <li>新增缓存监控管理</li>
+                                            <li>新增锁定屏幕功能</li>
+                                            <li>菜单新增是否刷新页面</li>
+                                            <li>删除用户和角色解绑关联</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h5 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#version" href="#v202104">v2021.04</a>
+                                        <code class="pull-right">2021.04.30</code>
+                                    </h5>
+                                </div>
+                                <div id="v202104" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ol>
+                                            <li>阻止任意文件下载漏洞</li>
+                                            <li>升级shiro到最新版1.7.0 阻止权限绕过漏洞</li>
+                                            <li>升级druid到最新版本v1.2.2</li>
+                                            <li>新增表格行触发事件（onCheck、onUncheck、onCheckAll、onUncheckAll）</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h5 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#version" href="#v202103">v2021.03</a>
+                                        <code class="pull-right">2021.03.31</code>
+                                    </h5>
+                                </div>
+                                <div id="v202103" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ol>
+                                            <li>新增菜单导航显示风格（default为左侧导航菜单，topnav为顶部导航菜单）</li>
+                                            <li>菜单&数据权限新增（展开/折叠 全选/全不选 父子联动）</li>
+                                            <li>账号密码支持自定义更新周期</li>
+                                            <li>初始密码支持自定义修改策略</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>图片总结模块</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="alert alert-warning">
+                        对图片存在的说明
+                    </div>
+                    <p id="pay-qrcode">
+                        <a href="javascript:;">
+                            <img th:src="@{/img/pay.png}" width="100%" alt="请使用手机支付宝或者微信扫码支付">
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script th:src="@{/js/jquery.min.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+<script th:src="@{/ajax/libs/layer/layer.min.js}"></script>
+<script type="text/javascript">
+    $('#pay-qrcode').click(function () {
+        var html = $(this).html();
+        parent.layer.open({
+            title: false,
+            type: 1,
+            closeBtn: false,
+            shadeClose: true,
+            area: ['600px', '360px'],
+            content: html
+        });
+    });
+</script>
+
+</body>
+</html>
